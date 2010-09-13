@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+
+<html>
+
+<head>
+<title>Tandy FP 215 260-1193 Print Mode</title>
+<meta name="OWNER" content="Product Support/Tandy Retail Services">
+<meta name="AUTHOR" content="Technical Information Services/Product Support">
+<meta name="GENERATOR" content="Microsoft FrontPage 1.1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<pre>
+FP 215   (26-1193)                Print Mode             Faxback Doc. 5921
+
+In the Print mode, you can use your Plotter like an ordinary printer either
+by hardware or software commands.  To enter Print mode via hardware,
+power-up the Plotter and simultaneously press &#60; and &#62; for horizontal format
+printing (PRINT-A Mode).  To do so via software, send a CHR$(17).  By
+turning PRINT-A Mode, the pen will move from starting position to the
+coordinate position (255,1650) and will print in the PRINT-A Mode according
+to the input character code.
+
+In the PRINT-A Mode a character size of 2.4mm x 1.6mm, 92 characters per
+line and 36 lines per page can be printed.
+
+NOTE:
+1. When the last character of the last line has been printed, the Plotter
+   stops printing.  To change the paper, press the ON/OFF LINE switch.  Pen
+   will move to Home position.
+
+   Press ON/OFF LINE again after changing paper, then Plotter will restart
+   printing from beginning of new paper.
+
+2. When printing is finished, press ON/OFF LINE.  The pen will move to Home
+   position.  If you wish to print some more, press ON/OFF LINE again.  The
+   pen will move from Home position to the first designated position and
+   wait for data.
+
+3. When the Power Switch is turned off, PRINT-A Mode is canceled.
+
+4. To stop printing, press the ON/OFF LINE after the input signal has
+   stopped.
+
+5. To enter GRAPHIC Mode, send a decimal code 19 to the Plotter.  From
+   BASIC, use the command CHR$(19).
+
+Example of a Print Mode program
+
+    (program)                         (print)
+
+    1) LPRINT"APY4101"                APY4101
+    2) 10 LPRINT"PLOTTER"             PLOTTER
+    3) LLIST                          Prints the program list.
+
+PRINT-B MODE (VERTICAL PRINT MODE)
+
+In the Print mode, you can use your Plotter like an ordinary printer either
+by hardware or software commands.  To enter Print mode via hardware,
+power-up the Plotter and simultaneously press up arrow and down arrow for
+vertical format printing (Print-B Mode).  To do so via software, send a
+CHR$(18).  By turning PRINT-B Mode, the pen will move from starting
+position to the coordinate position (260,250) and will print in the PRINT-B
+Mode according to the input character code.
+
+In the PRINT-B Mode a character size of 2.4mm x 1.6mm, 64 characters per
+line and 54 lines per page can be printed.
+
+NOTE
+
+1) When the last character of the last line has been printed, the Plotter
+   stops printing.  To change the paper, press ON/OFF LINE switch.  Pen
+   will move to Home position.
+
+Press ON/OFF LINE again after changing paper, then Plotter will restart
+printing from beginning of new paper.
+
+2) When printing is finished, press ON/OFF LINE.  The pen will move to Home
+   position.  If you wish to print some more, press ON/OFF LINE again.  The
+   pen will move from Home position to the first designated position and
+   wait for data.
+
+3) When the Power Switch is turned off, PRINT-B Mode is canceled.
+
+4) To stop printing, press the ON/OFF LINE after the input signal has
+   stopped.
+
+5) To enter GRAPHIC Mode, send a decimal code 19 to the Plotter.  From
+   BASIC, use the command CHR$(19).
+
+Example of a Print Mode program (for TRS-80 Model I/II/III)
+
+    (program)                         (print)
+
+    1) LPRINT"APY4101"                APY4101
+    2) 10 LPRINT"PLOTTER"             PLOTTER
+    3) LLIST                          Prints the program list.
+
+(dkh-08/04/93)
+</pre>
+<P><A HREF="http://www.radioshack.com/images/site/legal/rsprivacy.asp" target=_new>Privacy Policy</A></P>
+
+</body>
+
+</html>
